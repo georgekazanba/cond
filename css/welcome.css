@@ -1,0 +1,20 @@
+.welcome{
+    padding: var(--body-padding);
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap:20px;
+}
+/* блок слева */
+.welcome-left h1{
+    font-family: "Montserrat Alternates";
+    font-size:40px;
+    font-weight: 700;
+}
+.welcome-left h2{
+    font-size:32px;
+    font-weight:600;
+}
+.welcome-left .recolor{
+    color: #6F73D2;
+}
+/* блок справа */

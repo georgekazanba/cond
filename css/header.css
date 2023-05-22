@@ -1,0 +1,39 @@
+/* хэдер */
+header{
+    padding: 20px 162px 20px 162px;
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    background-color: WHITE;
+}
+/* логотип */
+.logo p{
+    font-family: "Montserrat Alternates";
+    color: #6F73D2;
+    font-weight: 800;
+    font-size: 20px;
+}
+/* навбар */
+nav{
+    font-family: "Montserrat Alternates";
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+nav a{
+    color:black;
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    font-size: 20px;
+}
+/* прочее */
+.contact-header{
+    gap:20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: end;
+}
+.contact-header p{
+    text-align: right;
+}

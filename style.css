@@ -1,0 +1,15 @@
+/* шрифты */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700;800&display=swap');
+/* блоки сайта */
+@import url('css/base.css');
+@import url('css/header.css');
+@import url('css/welcome.css');
+@import url('css/catalog.css');
+@import url('css/footer.css');
+/* переменные */
+:root{
+    --main-gradient: linear-gradient(0.25turn, #83C9F4, #6F73D2);
+    --body-padding: 40px 162px 40px 162px;
+}

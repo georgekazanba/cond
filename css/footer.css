@@ -1,0 +1,31 @@
+footer{
+    background-color: #D9F0FF;
+    padding: 40px 162px 40px 162px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    /* display: grid;
+    grid-template-columns:repeat(12, 1fr); */
+}
+/* ТЕКСТ */
+footer p{
+    color: #7681B3;
+}
+footer a{
+    color: #7681B3;
+}
+footer h1{
+    font-weight: 800;
+    color: #6F73D2;
+    font-size: 60px;
+}
+/* БЛОКИ */
+footer article{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    gap:20px;
+}
+.footer-extra{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,46 @@
+.catalog section{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    gap:20px;
+    padding: 40px 0 40px 0;
+}
+/* карточка */
+.card{
+    width:310px;
+}
+.card-info{
+    background-color:#7681B3;
+    color:white;
+    padding:5%;
+}
+.card h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+.card p{
+    font-size: 16px;
+}
+.card button{
+    background-image: white;
+    color: #7681B3;
+    font-size:20px;
+    font-weight:600;
+    padding:10px;
+    border-radius: 20px;
+    border-style:none;
+}
+.card button::after{
+    content: "Заказать";
+}
+/* акция */
+.sale .card-info{
+    background-image: var(--main-gradient);
+}
+.sale button::after{
+    background-image:var(--main-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
