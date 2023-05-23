@@ -1,0 +1,19 @@
+.pros section{
+    display:flex;
+    width: 100%;
+    gap:20px;
+}
+.pros-big{
+    width:50%;
+    display:flex;
+}
+.pros-small{
+    width:50%;
+    display:grid;
+    grid-template-areas:
+    "a b"
+    "c d";
+}
+.pros-card{
+    width: 100%;
+}

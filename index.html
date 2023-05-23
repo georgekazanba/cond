@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Домашний Север</title>
+    <script src="js/itc-slider.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">
+            <svg>
+                <use xlink:href="sprite.svg#logo"></use>
+            </svg>
             <p>Домашний<br>Север</p>
         </div>
         <nav class="navbar">
-            <a href="#">Главная</a>
-            <a href="#">Каталог</a>
-            <a href="#">Блог</a>
-            <a href="#">Отзывы</a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="sprite.svg#main"></use>
+                </svg>
+                Главная
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="sprite.svg#catalog"></use>
+                </svg>
+                Каталог
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="sprite.svg#blog"></use>
+                </svg>
+                Блог
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="sprite.svg#reviews"></use>
+                </svg>
+                Отзывы
+            </a>
         </nav>
         <div class="contact-header">
             <p>
@@ -33,6 +57,12 @@
             </section>
             <section class="welcome-right">
                 <button class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                <div class="contact-welcome">
+                    <p>
+                        8 800 555 35 35<br>
+                        Ежедневно с 9:00 до 20:00
+                    </p>
+                </div>
             </section>
         </article>
         <!-- каталог -->
@@ -78,6 +108,21 @@
         <article class="kmr grad content">
             <h1 class="title">КАК МЫ РАБОТАЕМ</h1>
             <section>
+                <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="5000" swipe="true">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                A
+                            </div>
+                            <div class="itc-slider-item">
+                                B
+                            </div>
+                            <div class="itc-slider-item">
+                            C
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <button class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
         </article>
@@ -85,34 +130,129 @@
         <article class="pros fill content">
             <h1 class="title">ПРЕИМУЩЕСТВА</h1>
             <section>
+                <div class="pros-big">
+                    <div class="pros-card">A</div>
+                </div>
+                <div class="pros-small">
+                    <div class="pros-card">B</div>
+                    <div class="pros-card">B</div>
+                    <div class="pros-card">B</div>
+                    <div class="pros-card">B</div>
+                </div>
             </section>
         </article>
         <!-- наши работы -->
         <article class="ourworks grad content">
             <h1 class="title">НАШИ РАБОТЫ</h1>
             <section>
+                <div class="itc-slider" data-slider="itc-slider" data-autoplay="true" swipe="true" lopp="true">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                A
+                            </div>
+                            <div class="itc-slider-item">
+                                B
+                            </div>
+                            <div class="itc-slider-item">
+                                C
+                            </div>
+                            <div class="itc-slider-item">
+                                D
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </article>
         <!-- отзывы клиентов -->
-        <article class="clients fill content">
+        <article class="reviews fill content">
             <h1 class="title">ОТЗЫВЫ КЛИЕНТОВ</h1>
             <section>
+                <div class="review">
+                    <div class="review-img">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="review-txt">
+                        <h3>Имя</h3>
+                        <p>обзор - это взор</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-img">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="review-txt">
+                        <h3>Имя</h3>
+                        <p>обзор - это взор</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-img">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="review-txt">
+                        <h3>Имя</h3>
+                        <p>обзор - это взор</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-img">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="review-txt">
+                        <h3>Имя</h3>
+                        <p>обзор - это взор</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-img">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="review-txt">
+                        <h3>Имя</h3>
+                        <p>обзор - это взор</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-img">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="review-txt">
+                        <h3>Имя</h3>
+                        <p>обзор - это взор</p>
+                    </div>
+                </div>
             </section>
         </article>
     </main>
-    <!-- <footer>
+    <footer>
         <article>
+            <h1>КОНТАКТЫ</h1>
+            </div>
             <section>
-                <h1>КОНТАКТЫ</h1>
-            </section>
-            <section>
+                <div>a</div>
+                <p>
+                    <b>Адрес</b> - ул. Пушкина, дом Колотушкина
+                    <br>
+                    <b>Телефон</b> - 8 800 555 35 35
+                    <br>
+                    и т.д.
+                    <br>
+                    и т.п.
+                </p>
             </section>
         </article>
         <div class="footer-extra">
             <p>© 2023 home-north.ru</p>
-            <div class="logo-header"></div>
+            <div class="logo">
+                <svg>
+                    <use xlink:href="sprite.svg#logo"></use>
+                </svg>
+                <p>Домашний<br>Север</p>
+            </div>
             <a href="#">Политика конфиденциональности</a>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>

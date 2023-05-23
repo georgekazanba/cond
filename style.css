@@ -7,9 +7,26 @@
 @import url('css/header.css');
 @import url('css/welcome.css');
 @import url('css/catalog.css');
+@import url('css/kmr.css');
+@import url('css/pros.css');
+@import url('css/ourworks.css');
+@import url('css/reviews.css');
 @import url('css/footer.css');
+/* элементы сайта */
+@import url('css/logo.css');
+@import url('css/itc-slider.css');
 /* переменные */
 :root{
     --main-gradient: linear-gradient(0.25turn, #83C9F4, #6F73D2);
     --body-padding: 40px 162px 40px 162px;
+}
+@media (max-width:1644px) {
+    :root{
+        --body-padding: 40px 80px 40px 80px;
+    }
+}
+@media (max-width:816px) {
+    :root{
+        --body-padding: 40px 12px 40px 12px;
+    }
 }

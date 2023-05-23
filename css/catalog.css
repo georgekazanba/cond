@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     width:100%;
-    gap:20px;
+    gap:1%;
     padding: 40px 0 40px 0;
 }
 /* карточка */
 .card{
-    width:310px;
+    width:24%;
 }
 .card-info{
     background-color:#7681B3;
@@ -43,4 +43,8 @@
     background-image:var(--main-gradient);
     -webkit-background-clip: text;
     color: transparent;
+}
+@media (max-width:816px) {
+    .catalog section{gap:0;}
+    .card{width:49%;padding:2%;}
 }

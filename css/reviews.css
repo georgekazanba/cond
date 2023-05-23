@@ -1,0 +1,19 @@
+.reviews section{
+    width:100%;
+    display:grid;
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+    gap:20px;
+}
+.review-img{
+    border-radius:25px 25px 0 0;
+    background-color:blue;
+}
+.review-txt{
+    background-color: #404040;
+    color:white;
+    padding:3% 5%;
+    border-radius:0 0 25px 25px;
+}

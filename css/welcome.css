@@ -9,6 +9,7 @@
     font-family: "Montserrat Alternates";
     font-size:40px;
     font-weight: 700;
+    padding-bottom: 20px;
 }
 .welcome-left h2{
     font-size:32px;
@@ -18,3 +19,31 @@
     color: #6F73D2;
 }
 /* блок справа */
+.welcome-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap:20px;
+}
+.contact-welcome{
+    display:none;
+}
+@media (max-width:1640px){
+    .welcome{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    .welcome-left h1{
+        font-size:36px;
+    }
+    .welcome-left h2{
+        font-size:28px;
+    }
+    .welcome-right{
+        align-items: center;
+    }
+    .contact-welcome{
+        display:block;
+    }
+}

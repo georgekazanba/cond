@@ -6,11 +6,31 @@ header{
     background-color: WHITE;
 }
 /* логотип */
+.logo{
+    display: flex;
+    align-items: center;
+}
 .logo p{
     font-family: "Montserrat Alternates";
     color: #6F73D2;
     font-weight: 800;
     font-size: 20px;
+}
+.logo svg{
+    width:100px;
+    height:100px;
+    animation:4s linear spin infinite;
+}
+.logo svg:hover{
+    animation-play-state: paused;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 /* навбар */
 nav{
@@ -19,12 +39,17 @@ nav{
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-}
-nav a{
-    color:black;
     font-family: "Montserrat Alternates";
     font-weight: 600;
     font-size: 20px;
+}
+nav a{
+    color:black;
+    display:flex;
+    flex-direction: column;
+}
+nav svg{
+    display:none;
 }
 /* прочее */
 .contact-header{
@@ -36,4 +61,47 @@ nav a{
 }
 .contact-header p{
     text-align: right;
+}
+
+/* АДАПТИВ */
+@media (max-width:1644px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-header{
+        display:none;
+    }
+    nav{
+        z-index: 10;
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+        height: 90px;
+        background-image:var(--main-gradient);
+    }
+    nav a{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        background-color: white;
+    }
+    nav svg{
+        display: block;
+        width:44px;
+        height:44px;
+    }
+    nav a:hover{
+        animation:0.25s ease-out recolor-nav forwards;
+    }
+    @keyframes recolor-nav {
+        to {
+            background-color: transparent;
+            color:white;
+            fill:white;
+        }
+    }
 }
