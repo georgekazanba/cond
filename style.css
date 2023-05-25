@@ -14,19 +14,25 @@
 @import url('css/footer.css');
 /* элементы сайта */
 @import url('css/logo.css');
+@import url('css/product.css');
+@import url('css/modal.css');
 @import url('css/itc-slider.css');
 /* переменные */
 :root{
+    --vi:#6F73D2;
+    --pale-vi:#7681B3;
+    --lb:#83C9F4;
     --main-gradient: linear-gradient(0.25turn, #83C9F4, #6F73D2);
-    --body-padding: 40px 162px 40px 162px;
+    --body-padding: 40px 162px;
+    --btn-gradient: linear-gradient(0.25turn, #83C9F4 0%, #6F73D2 51%, #83C9F4 100%);
 }
 @media (max-width:1644px) {
     :root{
-        --body-padding: 40px 80px 40px 80px;
+        --body-padding: 40px 80px;
     }
 }
 @media (max-width:816px) {
     :root{
-        --body-padding: 40px 12px 40px 12px;
+        --body-padding: 40px 12px;
     }
 }

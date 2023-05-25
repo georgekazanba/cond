@@ -1,0 +1,2 @@
+.modal{opacity:0;visibility:hidden;transition:.2s;}
+.modal-active{display:1;visibility: visible;}

@@ -12,7 +12,7 @@ header{
 }
 .logo p{
     font-family: "Montserrat Alternates";
-    color: #6F73D2;
+    color: var(--vi);
     font-weight: 800;
     font-size: 20px;
 }
@@ -88,6 +88,7 @@ nav svg{
         justify-content: center;
         align-items:center;
         background-color: white;
+        transition:0.25s;
     }
     nav svg{
         display: block;
@@ -95,13 +96,8 @@ nav svg{
         height:44px;
     }
     nav a:hover{
-        animation:0.25s ease-out recolor-nav forwards;
-    }
-    @keyframes recolor-nav {
-        to {
-            background-color: transparent;
-            color:white;
-            fill:white;
-        }
+        background-color: transparent;
+        color:white;
+        fill:white;
     }
 }

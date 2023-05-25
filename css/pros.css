@@ -1,6 +1,6 @@
 .pros section{
     display:flex;
-    width: 100%;
+    width: 50%;
     gap:20px;
 }
 .pros-big{
@@ -13,7 +13,34 @@
     grid-template-areas:
     "a b"
     "c d";
+    gap:2.5%;
 }
+.pros-small img{border-radius:25px;}
 .pros-card{
     width: 100%;
+    position:relative;
+}
+.pros-card p{font-size:24px;}
+.pros-small p{font-size:1em;;}
+.pros-card img{
+    width: 100%;
+}
+.pros-card p{
+    text-align: center;
+    position:absolute;
+    width: 100%;
+    bottom:0;
+    left:0;
+    padding:3%;
+}
+.pros-card .recolor{
+    color:var(--vi);
+    font-weight:700;
+}
+@media (max-width:1640px) {
+    .pros section{width:100%;}
+}
+@media (max-width:816px) {
+    .pros section{flex-direction: column; align-items: center;}
+    .pros-big, .pros-small{width:100%;}
 }

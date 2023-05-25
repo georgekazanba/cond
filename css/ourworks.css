@@ -1,7 +1,19 @@
 .ourworks section{
-    width: 100%;
+    width: 50%;
 }
 .ourworks .itc-slider-item{
     flex: 0 0 auto;
     width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ourworks img{
+    width: 95%;
+    border-radius:50px;
+}
+@media (max-width:1640px) {
+    .ourworks section{width: 100%;}
+    .ourworks img{border-radius:25px;}
 }

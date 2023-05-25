@@ -3,15 +3,15 @@
     box-sizing: border-box;
     font-family: "Montserrat";
 }
-
 a{
     text-decoration: none;
 }
 body{
     background-image: url('/img/bg.png');
+    /* overflow:hidden; */
 }
 .title{
-    background-image: linear-gradient(0.25turn, #83C9F4, #6F73D2);
+    background-image: var(--main-gradient);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -31,23 +31,32 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap:20px;
     padding: var(--body-padding);
 }
 button{
     cursor:pointer;
 }
 .btn{
-    background-image: var(--main-gradient);
+    background-image: var(--btn-gradient);
+    background-size:200% auto;
     color: white;
     font-size:20px;
     font-weight:600;
-    padding:10px;
-    border-radius: 10px;
+    padding:16px;
     border-style:none;
+    border-radius:16px;
     width:fit-content;
+    transition:.5s;
+}
+.btn:hover{
+    background-position: right center;
 }
 @media (max-width:1640px){
     .btn{
         width:100%;
+    }
+    body{
+        background-size: 150%;
     }
 }

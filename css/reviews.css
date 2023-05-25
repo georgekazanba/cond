@@ -1,19 +1,29 @@
 .reviews section{
-    width:100%;
+    width:50%;
     display:grid;
-    grid-template-areas:
-    "a b"
-    "c d"
-    "e f";
+    grid-template:1fr 1fr 1fr/1fr 1fr;
     gap:20px;
 }
-.review-img{
+.review{display:flex;flex-direction: column;}
+.review img{
     border-radius:25px 25px 0 0;
-    background-color:blue;
+    width: 100%;
 }
 .review-txt{
-    background-color: #404040;
+    flex:1;
+    overflow-wrap: break-word;
+    background-color: var(--pale-vi);
     color:white;
-    padding:3% 5%;
+    padding:4% 5%;
     border-radius:0 0 25px 25px;
+}
+.review-txt .recolor{
+    font-family: "Montserrat Alternates";
+    font-weight:600;
+    font-size: 1.6rem;
+}
+@media (max-width:1640px) {
+    .reviews section{width:100%;}
+    .review-txt{padding:6% 7%;}
+    .review-txt .recolor{font-size: 1.3rem;}
 }

@@ -1,3 +1,30 @@
 .kmr section{
+    width: 50%;
+}
+.kmr .itc-slider-item{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:grab;
+}
+.kmr img{
     width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+.kmr p{
+    background-color: var(--pale-vi);
+    text-align: center;
+    width:100%;
+    padding:10px;
+    border-radius: 0 0 50px 50px;
+    color:white;
+}
+.kmr .recolor{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+@media (max-width:1640px) {
+    .kmr section{width:100%;}
+    .kmr p{font-size:.8rem;}
 }
