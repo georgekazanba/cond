@@ -23,7 +23,7 @@
     font-size: 1.6rem;
 }
 @media (max-width:1640px) {
-    .reviews section{width:100%;}
+    .reviews section{width:100%;grid-template:1fr 1fr 1fr/1fr;}
     .review-txt{padding:6% 7%;}
     .review-txt .recolor{font-size: 1.3rem;}
 }
