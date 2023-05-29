@@ -1,6 +1,5 @@
 var consult = document.querySelector('.consult');
 
-
 function openConsult() {
     consult.classList.replace('modal', 'modal-active');
     document.body.style.overflow = 'hidden';
@@ -12,5 +11,5 @@ function closeConsult() {
     console.log('б');
 }
 document.addEventListener('keydown', function(e) {
-    e.code = "Escape" ? closeConsult() : '';
+    e.keyCode == 27 ? closeConsult() : '';
 });

@@ -77,8 +77,10 @@
     justify-content:center;
     align-items:center;
 }
-
+@media (max-width:1640px){
+    .card{width:49%;padding:2%;}
+}
 @media (max-width:816px) {
     .catalog section{gap:0;}
-    .card{width:49%;padding:2%;}
+    .card{width:100%;padding:2%;}
 }

@@ -1,5 +1,5 @@
 /* шрифты */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700;800&display=swap');
 /* блоки сайта */
@@ -17,6 +17,8 @@
 @import url('css/product.css');
 @import url('css/consult.css');
 @import url('css/modal.css');
+@import url('css/catalog_modal.css');
+@import url('css/order.css');
 @import url('css/itc-slider.css');
 /* переменные */
 :root{

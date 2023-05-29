@@ -37,5 +37,5 @@ function closeProduct() {
 }
 
 document.addEventListener('keydown', function(e) {
-    e.code = "Escape" ? closeProduct() : '';
+    e.keyCode == 27 ? closeProduct() : '';
 });

@@ -53,6 +53,7 @@
         align-items: center;
     }
     .contact-welcome{
-        display:block;
+        display:flex;
+        gap:20px;
     }
 }

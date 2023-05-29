@@ -46,6 +46,10 @@
                 8 800 555 35 35<br>
                 Ежедневно с 9:00 до 20:00
             </p>
+            <div class="messengers">
+                <svg class="messengers-icon"><use xlink:href="sprite.svg#whatsapp"></use></svg>
+                <svg class="messengers-icon"><use xlink:href="sprite.svg#telegram"></use></svg>
+            </div>
         </div>
     </header>
     <main>
@@ -59,10 +63,12 @@
                 <img src="img/banner.png" alt="баннер">
                 <button class="btn" onclick="openConsult()">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
                 <div class="contact-welcome">
+                    <svg class="messengers-icon"><use xlink:href="sprite.svg#whatsapp"></use></svg>
                     <p>
                         8 800 555 35 35<br>
                         Ежедневно с 9:00 до 20:00
                     </p>
+                    <svg class="messengers-icon"><use xlink:href="sprite.svg#telegram"></use></svg>
                 </div>
             </section>
         </section>
@@ -79,7 +85,7 @@
                             Площадь: 20 м²<br>
                             Гарантия: 3 года
                         </p>
-                        <button></button>
+                        <button onclick="openOrder()"></button>
                     </div>
                 </div>
                 <div href="#" class="card">
@@ -119,7 +125,7 @@
                     </div>
                 </div>
             </section>
-            <button class="btn">СМОТРЕТЬ ВСЕ КОНДИЦИОНЕРЫ</button>
+            <button class="btn" onclick="openCatalog()">СМОТРЕТЬ ВСЕ КОНДИЦИОНЕРЫ</button>
         </section>
         <!-- как мы работаем -->
         <section class="kmr grad content">
@@ -300,7 +306,7 @@
                 <h1>Newtek NT-65D07</h1>
                 <p>Китай</p>
                 <h2>20 700₽ <span class="recolor">22 000₽</span></h2>
-                <button class="btn">Заказать</button>
+                <button class="btn" onclick="openOrder()">Заказать</button>
             </div>
             <div class="product-show-right">
                 <div class="itc-slider" data-slider="itc-slider" swipe="true">
@@ -425,7 +431,117 @@
             <button class="btn">ОСТАВИТЬ ЗАЯВКУ</button>
         </div>
     </article>
+    <!-- модальное окно каталога -->
+    <article class="catalog-modal modal">
+        <svg class="close" onclick="closeCatalog()">
+            <use href="sprite.svg#close"></use>
+        </svg>
+        <h2 class="title">КАТАЛОГ</h2>
+        <div class="catalog-modal-list">
+            <div class="dropdown-check-list">
+                <span id="proiz" onclick="listEvent(this.id)" class="anchor">Производители</span>
+                <ul class="items">
+                      <li><input type="checkbox"/>Apple</li>
+                      <li><input type="checkbox"/>Orange</li>
+                      <li><input type="checkbox"/>Grapes</li>
+                      <li><input type="checkbox"/>Berry</li>
+                      <li><input type="checkbox"/>Mango</li>
+                      <li><input type="checkbox"/>Banana</li>
+                      <li><input type="checkbox"/>Tomato</li>
+                </ul>
+            </div>
+            <div class="dropdown-check-list">
+                <span id="compress" onclick="listEvent(this.id)" class="anchor">Тип компрессора</span>
+                <ul class="items">
+                      <li><input type="checkbox"/>Apple</li>
+                      <li><input type="checkbox"/>Orange</li>
+                      <li><input type="checkbox"/>Grapes</li>
+                      <li><input type="checkbox"/>Berry</li>
+                      <li><input type="checkbox"/>Mango</li>
+                      <li><input type="checkbox"/>Banana</li>
+                      <li><input type="checkbox"/>Tomato</li>
+                </ul>
+            </div>
+            <div class="dropdown-check-list">
+                <span id="square" onclick="listEvent(this.id)" class="anchor">Площадь</span>
+                <ul class="items">
+                      <li><input type="checkbox"/>Apple</li>
+                      <li><input type="checkbox"/>Orange</li>
+                      <li><input type="checkbox"/>Grapes</li>
+                      <li><input type="checkbox"/>Berry</li>
+                      <li><input type="checkbox"/>Mango</li>
+                      <li><input type="checkbox"/>Banana</li>
+                      <li><input type="checkbox"/>Tomato</li>
+                </ul>
+            </div>
+            <input type="text" class="search" placeholder="&#xF002; Поиск">
+            <select>
+                <option>Цена: по возрастанию</option>
+                <option>Цена: по убыванию</option>
+                <option>Название: А-Я</option>
+                <option>Название: Я-А</option>
+                <option>Порядок: сначала новые</option>
+                <option>Порядок: сначала старые</option>
+            </select>
+        </div>
+        <div class="catalog-modal-wrapper">
+
+        </div>
+    </article>
+    <!-- модальное окно заказа -->
+    <article class="order modal">
+        <svg class="close" onclick="closeOrder()">
+            <use href="sprite.svg#close"></use>
+        </svg>
+        <div class="order-wrapper">
+            <h3>Ваш заказ:</h3>
+            <div class="order-product">
+                <img src="img/sample.png" alt="" srcset="">
+                <p>Newtek NT-65D07</p>
+                <div class="counter">
+                    <p class="signs" id="minus" onclick="minusItem()">-</p>
+                    <p class="count" id="count">1</p>
+                    <p class="signs" id="plus" onclick="plusItem()">+</p>
+                </div>
+                <p id="price">20 700 ₽</p>
+            </div>
+            <p class="final">Итого: <span class="recolor" id="sum"></span></p>
+            <input type="text" placeholder="ФИО">
+            <input type="text" placeholder="+7 (999) 999-99-99">
+            <div><input type="checkbox" id="install"><label for id="install">Мне нужна установка кондиционера</label></div>
+            <input type="text" placeholder="Адрес доставки">
+            <ul class="order-deli">
+                <li>Вариант доставки:</li>
+                <li>
+                    <input type="radio" id="deli" name="delivery">
+                    <label for="deli">Доставка</label>
+                </li>
+                <li>
+                    <input type="radio" id="sam" name="delivery">
+                    <label for="sam">Самовывоз</label>
+                </li>
+            </ul>
+            <ul class="order-payment">
+                <li>Оплата:</li>
+                <li>
+                    <input type="radio" id="nal" name="payment">
+                    <label for="nal">Наличными при получении</label>
+                </li>
+                <li>
+                    <input type="radio" id="card" name="payment">
+                    <label for="card">СБП или перевод на карту при получении</label>
+                </li>
+                <li>
+                    <input type="radio" id="extra" name="payment">
+                    <label for="extra">Оплата по счёту юридического лица и ИП</label>
+                </li>
+            </ul>
+            <button class="btn">КУПИТЬ</button>
+        </div>
+    </article>
+    <script src="js/order.js"></script>
     <script src="js/consult.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/catalog.js"></script>
 </body>
 </html>
