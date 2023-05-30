@@ -1,4 +1,4 @@
-var consult = document.querySelector('.consult');
+let consult = document.querySelector('.consult');
 
 function openConsult() {
     consult.classList.replace('modal', 'modal-active');

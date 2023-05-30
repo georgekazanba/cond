@@ -1,9 +1,9 @@
 // переключение вкладок описания товара
-var descTitles = document.querySelector('.product-desc-titles').querySelectorAll('p');
+let descTitles = document.querySelector('.product-desc-titles').querySelectorAll('p');
 for (let title of descTitles){
     console.log(title);
 }
-var descContent = document.querySelector('.product-desc-content').querySelectorAll('p');
+let descContent = document.querySelector('.product-desc-content').querySelectorAll('p');
 for (let content of descContent){
     console.log(content);
 }
@@ -24,7 +24,7 @@ function changeDesc (id){
 }
 
 // открытие/закрытие модального окна товара
-var productCard = document.querySelector('.product');
+let productCard = document.querySelector('.product');
 function openProduct() {
     productCard.classList.replace('modal', 'modal-active');
     document.body.style.overflow = 'hidden';

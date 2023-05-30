@@ -1,7 +1,7 @@
 .reviews section{
     width:50%;
     display:grid;
-    grid-template:1fr 1fr 1fr/1fr;
+    grid-template:1fr 1fr 1fr/1fr 1fr;
     gap:20px;
 }
 .review{display:flex;flex-direction: column;}

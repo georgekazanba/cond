@@ -24,7 +24,7 @@ body::-webkit-scrollbar{width:0;}
     background-color: white;
 }
 .grad{
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5), rgb(255, 255, 255));
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 .content{
     display: flex;

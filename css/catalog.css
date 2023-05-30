@@ -82,5 +82,5 @@
 }
 @media (max-width:816px) {
     .catalog section{gap:0;}
-    .card{width:100%;padding:2%;}
+    .card{width:100%;padding:2% 0;}
 }

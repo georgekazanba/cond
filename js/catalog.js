@@ -20,7 +20,7 @@ function generateCatalog() {
 generateCatalog();
 
 // открытие/закрытие модального окна каталога
-var catalogModal = document.querySelector('.catalog-modal');
+let catalogModal = document.querySelector('.catalog-modal');
 function openCatalog() {
     catalogModal.classList.replace('modal', 'modal-active');
     document.body.style.overflow = 'hidden';
@@ -38,7 +38,7 @@ document.addEventListener('keydown', function(e) {
 
 // фильтры
 function listEvent(id){
-    var checkList = document.getElementById(id);
+    let checkList = document.getElementById(id);
     if(checkList.parentNode.classList.contains('visible')){
         checkList.parentElement.classList.remove('visible');
     }
